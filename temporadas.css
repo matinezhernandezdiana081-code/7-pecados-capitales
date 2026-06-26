@@ -1,0 +1,126 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0b0b0b, #1e1e1e);
+    color: white;
+}
+
+
+
+nav{
+    background-color: #000;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.4);
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: gold;
+}
+
+
+
+h1{
+    text-align: center;
+    color:#b84dff;
+    margin-top: 30px;
+    font-size: 40px;
+    text-shadow: 2px 2px 15px #8000ff;
+}
+
+
+
+.temporada{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255,255,255,0.08);
+    margin: 30px auto;
+    width: 85%;
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.temporada:hover{
+    transform: scale(1.02);
+}
+
+
+
+.temporada img{
+    width: 260px;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 25px;
+    border: 3px solid gold;
+}
+
+/* TEXTO */
+
+.texto h2{
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.texto p{
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 2px solid gold;
+}
+
+footer p{
+    margin: 0;
+    color: #bbb;
+}
+
+
+
+@media(max-width: 768px){
+
+    .temporada{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .temporada img{
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .texto h2{
+        font-size: 25px;
+    }
+
+    .texto p{
+        font-size: 16px;
+    }
+}
